@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>오시는 길</title>
+      <link rel="stylesheet" href="css/way_to _come.css" />
+      <script src="javascript/jquery-1.12.3.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <!-- .top은 .logo와 .menu를 묶어줌 -->
+            <div class="top">
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="로고 이미지" /></a>
+               </div>
+               <nav class="menu">
+                  <ul class="navi">
+                     <li>
+                        <a href="#">회사소개</a>
+                        <ul class="submenu">
+                           <li><a href="#">인사말</a></li>
+                           <li><a href="Introduce.html" target="_blank">소개영상</a></li>
+                           <li><a href="way_to_come.html" target="_blank">오시는길</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">사업영역</a>
+                        <ul class="submenu">
+                           <li><a href="vegas.html" target="_blank">주택사업</a></li>
+                           <li><a href="#">건축사업</a></li>
+                           <li><a href="#">인테리어</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">입주정보</a>
+                        <ul class="submenu">
+                           <li><a href="#">입주단지</a></li>
+                           <li><a href="#">입주캘린더</a></li>
+                           <li><a href="#">입주모임</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">인재채용</a>
+                        <ul class="submenu">
+                           <li><a href="#">직무소개</a></li>
+                           <li><a href="#">채용공고</a></li>
+                           <li><a href="Sign_Up.html" target="_blank">회원가입</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <script>
+               jQuery(document).ready(function () {
+                  $('.navi > li')
+                     .mouseover(function () {
+                     
+                        $(this).find('.submenu').stop().slideDown(500);
+                     })
+                     .mouseout(function () {
+                        $(this).find('.submenu').stop().slideUp(500);
+                     });
+                  });
+            </script>
+         </header>
+         <section>
+            <div class="container">
+               <div id="map" style="width: 100%; height: 542px"></div>
+               <script
+                  type="text/javascript"
+                  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2623b9f28f9ab9dd494993135428f375"></script>
+               <script>
+                  var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                     mapOption = {
+                        center: new kakao.maps.LatLng(37.559505427340774, 127.00507610041961), // 지도의 중심좌표
+                        level: 3, // 지도의 확대 레벨
+                     };
+
+                  var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+                  // 마커가 표시될 위치입니다
+                  var markerPosition = new kakao.maps.LatLng(
+                     37.559505427340774,
+                     127.00507610041961,
+                  );
+
+                  // 마커를 생성합니다
+                  var marker = new kakao.maps.Marker({
+                     position: markerPosition,
+                  });
+
+                  // 마커가 지도 위에 표시되도록 설정합니다
+                  marker.setMap(map);
+
+                  // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                  // marker.setMap(null);
+               </script>
+            </div>
+            <div class="map_explanation">
+                <h3>주소</h3>
+                <div class="map1">
+                   <div class="map_textbox1">
+                      <p class="text1"><span>도로명 주소</span>서울특별시 중구 동호로 24길 7 남율건설</p>
+                      <p class="text1"><span>지명 주소</span>서울특별시 중구 장충동 2가 189-5</p>
+                   </div>
+                </div>
+                <h3>오시는 길</h3>
+                <div class="map1">
+                    <div class="map_textbox1">
+                        <p class="text1"><span>지하철</span>3호선 동대입구역 2번출구 (도보 1분)</p>
+                        <p class="text1"><span>버스</span>420, 144, 407, 301 (도보 8분)</p>
+                     </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+         </section>
+         <footer>
+            <div class="copy">COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED</div>
+            <div class="site">
+               <div class="btmenu">
+                  <ul>
+                     <li>
+                        <a href="#"><div class="iconbox1"></div></a>
+                     </li>
+                     <li>
+                        <a href="#"><div class="iconbox2"></div></a>
+                     </li>
+                     <li>
+                        <a href="#"><div class="iconbox3"></div></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="familysite">
+                  <select name="sitelist">
+                     <option value="#">패밀리사이트1</option>
+                     <option value="#">패밀리사이트2</option>
+                     <option value="#">패밀리사이트3</option>
+                  </select>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>

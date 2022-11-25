@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>남율 건설 소개 영상</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+         a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0 5px 0 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div class="logo">
+            <a href="index.html" target="_blank"><img src="images/logo.png" alt="로고 이미지" /></a>
+         </div>
+         <a href="#" class="tubular-play">재생</a>
+         <a href="#" class="tubular-pause">일시정지</a>
+         <a href="#" class="tubular-volume-up">소리키우기</a>
+         <a href="#" class="tubular-volume-down"> 소리줄이기</a>
+         <a href="#" class="tubular-mute">소리끄기</a>
+      </div>
+      <script src="javascript/jquery-1.12.3.js"></script>
+      <script src="javascript/jquery.tubular.1.0.js"></script>
+      <script>
+         $('document').ready(function () {
+            var options = {videoId: '-Nlom9cHLow', mute: true};
+            $('#wrapper').tubular(options);
+         });
+      </script>
+   </body>
+</html>

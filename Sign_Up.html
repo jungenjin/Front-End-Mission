@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>회원가입</title>
+      <link rel="stylesheet" href="css/Sign_Up.css" />
+      <script src="javascript/script_sign.js"></script>
+      <script src="javascript/jquery-1.12.3.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="javascript/jquery.parallax-scroll.min.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            <!-- .top은 .logo와 .menu를 묶어줌 -->
+            <div class="top">
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="로고 이미지" /></a>
+               </div>
+               <nav class="menu">
+                  <ul class="navi">
+                     <li>
+                        <a href="#">회사소개</a>
+                        <ul class="submenu">
+                           <li><a href="#">인사말</a></li>
+                           <li><a href="Introduce.html" target="_blank">소개영상</a></li>
+                           <li><a href="way_to_come.html" target="_blank">오시는길</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">사업영역</a>
+                        <ul class="submenu">
+                           <li><a href="vegas.html" target="_blank">주택사업</a></li>
+                           <li><a href="#">건축사업</a></li>
+                           <li><a href="#">인테리어</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">입주정보</a>
+                        <ul class="submenu">
+                           <li><a href="#">입주단지</a></li>
+                           <li><a href="#">입주캘린더</a></li>
+                           <li><a href="#">입주모임</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#">인재채용</a>
+                        <ul class="submenu">
+                           <li><a href="#">직무소개</a></li>
+                           <li><a href="#">채용공고</a></li>
+                           <li><a href="Sign_Up.html" target="_blank">회원가입</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </header>
+      <script>
+         jQuery(document).ready(function () {
+         $('.navi > li')
+            .mouseover(function () {
+               $(this).find('.submenu').stop().slideDown(500);
+            })
+            .mouseout(function () {
+               $(this).find('.submenu').stop().slideUp(500);
+            });
+         });
+      </script>
+      <div id="home1" data-type="background" data-speed="10">
+         <div class="container">
+            <div class="box1">
+               <form action="#" method="post">
+                  <fieldset>
+                     <legend>사용하실 이름을 알려주세요</legend>
+                     <p class="legend">사용하실 이름을 알려주세요</p>
+                     <div class="text_box">
+                        <p class="sub">
+                           이름 <br /><label for="name"></label
+                           ><input class="
+                           write" type="text" id="name" placeholder="이름" title="이름 입력" required="required"/>
+                        </p>
+                        <p class="sub">
+                           아이디 <br /><label for="id"></label
+                           ><input class="
+                           write" type="text" id="id" placeholder="아이디" title="아이디 입력" required="required" />
+                        </p>
+                        <p class="sub">
+                           비밀번호 <br /><label for="pw"></label
+                           ><input 
+                           class="write"
+                              type="text"
+                              id="pw"
+                              placeholder="비밀번호"
+                              title="비밀번호 입력" required="required"/>
+                        </p>
+                        <p class="sub">
+                           비밀번호 재입력 <br /><label for="r_pw"></label
+                           ><input
+                              class="write"
+                              type="text"
+                              id="r_pw"
+                              placeholder="비밀번호 재입력"
+                              title="비밀번호 재입력" required="required"/>
+                        </p>
+                        <p class="text">이름, 아이디, 비밀번호는 필수로 입력해주세요</p>
+                        <input class="submit" type="submit" value="확인">
+                     </div>
+                  </fieldset>
+               </form>
+            </div>
+        </div>
+      </div>
+
+      <section id="about" data-type="background" data-speed="10">
+         <article class="article">필수 기입 외에 추가 작성 문항이 있습니다</article>
+      </section>
+
+      <div id="home2" data-type="background" data-speed="10" class="pages">
+         <div class="container">   
+            <div class="box2">
+               <form action="#" method="post">
+                  <fieldset>
+                     <legend>당신에 대해 알려주세요</legend>
+                     <p class="legend">당신에 대해 알려주세요</p>
+                     <div class="text_box2">
+                        <p class="sub2">
+                           생일 <br /><label for="date"></label
+                           ><input class="write" type="date" id="name" placeholder="생일" title="생일 입력" />
+                        </p>
+                        <p class="sub2">
+                           성별 <br /><input
+                              type="radio"
+                              name="receive"
+                              checked="cheecked" /> 여자   <input type="radio" name="receive" /> 남자
+                        </p>
+                        <p class="sub2">
+                           이메일 <br /><label for="email"></label
+                           ><td><input
+                              class="write_em"
+                              type="text"
+                              id="email"
+                              placeholder="아이디 입력"
+                              autocomplete="on"
+                              title="이메일아이디 입력" />
+                              @
+                              <input
+                              class="write_em"
+                              type="text"
+                              id="email"
+                              placeholder="주소 입력"
+                              autocomplete="on"
+                              title="이메일주소 입력" />
+                           </td>
+                        </p>
+                        <p class="sub2">
+                           전화번호 <br /><label for="hp"></label
+                           ><td>
+                              <select id="hp" title="휴대폰 앞자리 선택">
+                                 <option selected="selected">010</option>
+                                 <option>011</option>
+                              </select>
+                              <input class="write_tel" type="tel" id="tel" pattern="￦d{3}-￦d{3,4}-￦d{4}" required="required" placeholder="0000-0000" title="휴대폰 번호는 숫자 3자리에서 4자리-숫자 4자리 입력" />
+                              <input class="submit_tel" type="submit" value="확인">
+                           </td>
+                        </p>
+                        <div class="login address">
+                           <p class="sub2">주소</p>
+                           <input class="address" type="text" id="sample4_postcode" placeholder="우편번호" />
+                           <input
+                              class="address_button"
+                              type="button"
+                              onclick="sample4_execDaumPostcode()"
+                              value="우편번호 찾기" /><br />
+                           <input class="address" type="text" id="sample4_roadAddress" placeholder="도로명주소" />
+                           <input class="address" type="text" id="sample4_jibunAddress" placeholder="지번주소" />
+                           <span id="guide" style="color: #999; display: none"></span>
+                           <input class="address" type="text" id="sample4_detailAddress" placeholder="상세주소" />
+                           <input class="address" type="text" id="sample4_extraAddress" placeholder="참고항목" />
+
+                           <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                           <script>
+                              //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
+                              function sample4_execDaumPostcode() {
+                                 new daum.Postcode({
+                                    oncomplete: function (data) {
+                                       // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                                       // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                                       // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                                       var roadAddr = data.roadAddress; // 도로명 주소 변수
+                                       var extraRoadAddr = ''; // 참고 항목 변수
+
+                                       // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                                       // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                                       if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
+                                          extraRoadAddr += data.bname;
+                                       }
+                                       // 건물명이 있고, 공동주택일 경우 추가한다.
+                                       if (data.buildingName !== '' && data.apartment === 'Y') {
+                                          extraRoadAddr +=
+                                             extraRoadAddr !== ''
+                                                ? ', ' + data.buildingName
+                                                : data.buildingName;
+                                       }
+                                       // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                                       if (extraRoadAddr !== '') {
+                                          extraRoadAddr = ' (' + extraRoadAddr + ')';
+                                       }
+
+                                       // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                                       document.getElementById('sample4_postcode').value =
+                                          data.zonecode;
+                                       document.getElementById('sample4_roadAddress').value =
+                                          roadAddr;
+                                       document.getElementById('sample4_jibunAddress').value =
+                                          data.jibunAddress;
+
+                                       // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                                       if (roadAddr !== '') {
+                                          document.getElementById('sample4_extraAddress').value =
+                                             extraRoadAddr;
+                                       } else {
+                                          document.getElementById('sample4_extraAddress').value =
+                                             '';
+                                       }
+
+                                       var guideTextBox = document.getElementById('guide');
+                                       // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                                       if (data.autoRoadAddress) {
+                                          var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                                          guideTextBox.innerHTML =
+                                             '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                                          guideTextBox.style.display = 'block';
+                                       } else if (data.autoJibunAddress) {
+                                          var expJibunAddr = data.autoJibunAddress;
+                                          guideTextBox.innerHTML =
+                                             '(예상 지번 주소 : ' + expJibunAddr + ')';
+                                          guideTextBox.style.display = 'block';
+                                       } else {
+                                          guideTextBox.innerHTML = '';
+                                          guideTextBox.style.display = 'none';
+                                       }
+                                    },
+                                 }).open();
+                              }
+                           </script>
+                        </div>
+                     </div>
+                  </fieldset>
+               </form>
+            </div>
+            </div>
+      </div>
+
+      <section id="about" data-type="background" data-speed="10" class="pages">
+         <article>문항이 거의 끝났습니다</article>
+      </section>
+
+
+      <div id="home3" data-type="background" data-speed="10" class="pages">
+         <div class="container">
+            <div class="box3">
+               <form action="#" method="post">
+                  <fieldset>
+                     <legend>취향에 대해 알려주세요</legend>
+                     <p class="legend">취향에 대해 알려주세요</p>
+                     <div class="text_box3">
+                        <p class="sub3">선호하는 색상<br /><input class="write" type="color" /></p>
+                        <p class="sub3">
+                           선호하는 빵 <br><input type="checkbox" checked="cheecked" /> 도넛   <input
+                              type="checkbox" /> 식빵   <input type="checkbox" /> 케이크   <input type="checkbox" /> 호밀빵</p>
+                        </p>
+                        <p class="sub3">
+                           가입 목적 <br /><textarea class="purpose" name="
+                           purpose" id="
+                           purpose"></textarea>
+                        </p>
+                     </div>
+                  </fieldset>
+               </form>
+            </div>
+        </div>
+      </div>
+      <section id="about" data-type="background" data-speed="10" class="pages">
+         <article>문항이 종료되었습니다<br>남율건설의 회원이 되셨습니다</article>
+      </section>
+
+      <footer>
+         <div class="container">
+            <div class="copy">COPYRIGHT © by WEBDESIGN. ALL RIGHTS RESERVED</div>
+            <div class="site">
+               <div class="btmenu">
+                  <ul>
+                     <li>
+                        <a href="#"><div class="iconbox1"></div></a>
+                     </li>
+                     <li>
+                        <a href="#"><div class="iconbox2"></div></a>
+                     </li>
+                     <li>
+                        <a href="#"><div class="iconbox3"></div></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="familysite">
+                  <select name="sitelist">
+                     <option value="#">패밀리사이트1</option>
+                     <option value="#">패밀리사이트2</option>
+                     <option value="#">패밀리사이트3</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

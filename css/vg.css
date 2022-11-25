@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Jua&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@700&family=Oswald&display=swap');
+#content {
+   position: absolute;
+   left: 10%;
+   top: 40%;
+   margin-right: 50px;
+   padding: 30px 50px;
+   background: rgba(35, 35, 35, 0.1);
+}
+h1 {
+   color: #fff;
+   font-size: 3em;
+   font-family: 'Oswald', sans-serif;
+   text-shadow: 2px 2px 3px #222, 2px 2px 3px black;
+}
+p {
+   padding-top: 20px;
+   color: #fff;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-weight: bold;
+   font-size: 1.5em;
+   line-height: 2em;
+   text-shadow: 2px 2px 3px #222, 2px 2px 3px black;
+}
+a,
+a:visited {
+   text-decoration: none;
+   color: #fff;
+}
