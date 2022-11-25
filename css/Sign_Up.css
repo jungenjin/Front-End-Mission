@@ -184,6 +184,9 @@ legend {
    width: 252px;
    height: 30px;
 }
+.write_color {
+   width: 100px;
+}
 select {
    height: 30px;
 }
@@ -197,6 +200,7 @@ select {
    height: 100px;
    resize: none;
 }
+
 /* button */
 .submit {
    margin: 5px 0 10px 915px;
@@ -205,11 +209,6 @@ select {
 }
 .address_button {
    width: 100px;
-   height: 30px;
-}
-.submit_url {
-   margin: 5px 0 0 282px;
-   width: 68px;
    height: 30px;
 }
 .submit_tel {

@@ -108,7 +108,7 @@ header {
 .submenu > li > a:hover {
    background-color: #30a3f3;
 }
-
+/* section */
 .map_explanation {
    margin: 50px 0 0 0;
 }
@@ -141,6 +141,7 @@ span {
    font-weight: 700;
    padding: 0 12px 0 0;
 }
+/* footer */
 footer {
    /* 하단 높이 */
    height: 100px;
